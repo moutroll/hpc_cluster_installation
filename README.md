@@ -26,4 +26,4 @@ The configuration of the cluster is:
 - [ ] Installation of the distributed and shared filesystem and Docker Registry
   - [ ] Installation of Docker Registry
   - [ ] Installation of the distributed and shared filesystem
-- [ ] Documentation of basic usages
+- [x] Documentation of basic usages

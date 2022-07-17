@@ -237,9 +237,9 @@ be shared.
 
 *Slurmd* daemon service is not correctly configured
 :
-1. *Slurmd* get all configuration files remotely for the master (by network). So we have to disable the configuration file 
+1. *Slurmd* gets all configuration files remotely from the master (by network). So we have to disable the configuration file 
 existence checking.
-2. The execution command must be updated to consider the *configless** approach used by *Slurmd* daemon.
+2. The execution command must be updated to consider the *configless* approach used by *Slurmd* daemon.
 
 > EDIT: /usr/lib/systemd/system/slurmd.service
 > > ~~ConditionPathExists=/etc/slurm/slurm.conf~~\
@@ -347,7 +347,7 @@ CONFIG_VSYSCALL_NATIVE            : KO (required if glibc <= 2.13)\
 
 **Note**: 
 * `libslurm-dev` is necessary to install *spank* module for *Slurm*
-* `make` can be not installed so we install `build-essential
+* `make` can be not installed so we install `build-essential`
 
 ## Test Pyxies
 
@@ -355,12 +355,12 @@ If *Pyxies* plugin is correctly installed, you will see *Pyxies* options with `s
 
 ## Cluster final test
 
-For testing the cluster install, we will execute a simple command in each node using a ubuntu container.
+For testing the cluster install, we will execute a simple command in each node using an ubuntu container.
 
 `srun -N2 --container-image=ubuntu cat /etc/os-release`
 
-> pyxis: imported docker image: ubuntu
-> pyxis: imported docker image: ubuntu
+> pyxis: imported docker image: ubuntu\
+> pyxis: imported docker image: ubuntu\
 > PRETTY_NAME="Ubuntu 22.04 LTS"\
 > NAME="Ubuntu"\
 > VERSION_ID="22.04"\
